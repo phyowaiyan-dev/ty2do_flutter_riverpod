@@ -1,5 +1,9 @@
 # ty2do_flutter_riverpod
 
+[![CI](https://github.com/phyowaiyan-dev/ty2do_flutter_riverpod/actions/workflows/ci.yml/badge.svg)](https://github.com/phyowaiyan-dev/ty2do_flutter_riverpod/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/phyowaiyan-dev/ty2do_flutter_riverpod)](LICENSE)
+[![Flutter](https://img.shields.io/badge/Flutter-ready-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+
 A Flutter todo app built with Riverpod, code generation, and a feature-first structure.
 
 ## What This Project Includes
@@ -65,3 +69,7 @@ If you find a security issue, follow [SECURITY.md](SECURITY.md) instead of posti
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+## Release Checklist
+
+Before tagging a release, review [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).
