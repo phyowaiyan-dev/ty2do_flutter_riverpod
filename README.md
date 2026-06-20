@@ -1,17 +1,67 @@
 # ty2do_flutter_riverpod
 
-A new Flutter project.
+A Flutter todo app built with Riverpod, code generation, and a feature-first structure.
+
+## What This Project Includes
+
+- Riverpod-powered state management
+- Generated provider code with `riverpod_annotation` and `riverpod_generator`
+- Feature-first folder structure for todos
+- Ready-to-use OSS community files and GitHub templates
+
+## Project Structure
+
+- `lib/features/todos/domain` - todo models
+- `lib/features/todos/application` - Riverpod controllers and app state
+- `lib/features/todos/presentation` - UI widgets and pages
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
+- A device, emulator, or browser target
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Install
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+```
+
+### Run the app
+
+```bash
+flutter run
+```
+
+### Generate Riverpod code
+
+```bash
+dart run build_runner build --delete-conflicting-outputs
+```
+
+For continuous generation while you edit:
+
+```bash
+dart run build_runner watch
+```
+
+### Run checks
+
+```bash
+flutter analyze
+flutter test
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+
+## Security
+
+If you find a security issue, follow [SECURITY.md](SECURITY.md) instead of posting exploit details in a public issue.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
