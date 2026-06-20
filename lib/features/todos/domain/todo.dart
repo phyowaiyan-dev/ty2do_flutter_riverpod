@@ -5,11 +5,7 @@ class Todo {
   final String title;
   final bool isDone;
 
-  Todo copyWith({
-    String? id,
-    String? title,
-    bool? isDone,
-  }) {
+  Todo copyWith({String? id, String? title, bool? isDone}) {
     return Todo(
       id: id ?? this.id,
       title: title ?? this.title,

@@ -21,17 +21,14 @@ class TodoController extends _$TodoController {
     state = [...state, Todo(id: _uuid.v4(), title: text)];
   }
 
-  void toggleTodo(String id){
+  void toggleTodo(String id) {
     state = [
       for (final todo in state)
-        if (todo.id == id)
-          todo.copyWith(isDone: !todo.isDone)
-        else
-          todo,
+        if (todo.id == id) todo.copyWith(isDone: !todo.isDone) else todo,
     ];
   }
 
-  void removeTodo(String id){
+  void removeTodo(String id) {
     state = state.where((todo) => todo.id != id).toList();
   }
 }
